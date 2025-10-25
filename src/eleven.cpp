@@ -219,7 +219,10 @@ Eleven Eleven::add(const Eleven& other) const
         }
         res.push_back(tmp + '0');
     }
-    
+    if (dop)
+    {
+        res.push_back('1');
+    }
 
     return Eleven(reverse(res));
 }

@@ -48,6 +48,9 @@ public:
     // Равно
     bool equal(const Eleven& other) const;
 
+    // Проверка на 0
+    bool isNull() const;
+
     // === ДОПОЛНИТЕЛЬНЫЕ МЕТОДЫ
     // Получение результата в корректном отображении
     std::string get_value_for_print() const;
@@ -67,7 +70,6 @@ public:
 
 
 private:
-    bool isNull() const;
     size_t array_size ;
     unsigned char * data;
 };
